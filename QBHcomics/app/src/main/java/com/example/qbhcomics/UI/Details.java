@@ -17,6 +17,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class Details extends AppCompatActivity {
     private Button button;
+    private Button button2;
 
     RequestQueue requestQueue;
     @Override
@@ -43,6 +44,8 @@ public class Details extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(nameDetail);
 
         button = (Button) findViewById(R.id.button);
+        button2 =(Button) findViewById(R.id.button2);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +54,13 @@ public class Details extends AppCompatActivity {
             }
         });
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Details.this,Home.class);
+                startActivity(intent);
+            }
+        });
         //loadContent();
 
     }

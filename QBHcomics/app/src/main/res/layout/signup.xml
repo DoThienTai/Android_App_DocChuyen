@@ -14,40 +14,40 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:src="@drawable/logo"
+            android:src="@drawable/logo1"
             />
     </RelativeLayout>
 
+<!--    <TextView-->
+<!--        android:id="@+id/login_client"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:text="@string/login"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header" />-->
+
+<!--    <RelativeLayout-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:id="@+id/shadow_left"-->
+<!--        android:background="@drawable/back_right"-->
+<!--        android:layout_width="234dp"-->
+<!--        android:layout_height="505dp"-->
+<!--        >-->
+
+
+<!--    </RelativeLayout>-->
+
     <TextView
-        android:id="@+id/login_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
-        android:text="@string/login"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
-
-    <RelativeLayout
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/shadow_left"
-        android:background="@drawable/back_right"
-        android:layout_width="234dp"
-        android:layout_height="505dp"
-        >
-
-
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginRight="32dp"
-        android:text="Sign up"
-        android:textSize="25sp"
+        android:layout_marginRight="88dp"
+        android:text="Sign up Comi"
+        android:textSize="40sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
@@ -85,7 +85,12 @@
             android:drawableRight="@drawable/ic_pass"
             android:hint="Confirm password"
             android:inputType="textPassword" />
-
+        <TextView
+            android:id="@+id/login_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login ?"
+            android:gravity="end"/>
 
     </LinearLayout>
 

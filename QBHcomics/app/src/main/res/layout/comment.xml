@@ -8,23 +8,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ListView
-            android:id="@+id/comment_listview"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+
 
         <EditText
             android:id="@+id/comment_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Name"/>
+            android:hint="Tên"/>
 
         <EditText
             android:id="@+id/comment_content"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:hint="Comment"/>
+            android:hint="Bình luận"/>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+        <ListView
+            android:id="@+id/comment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -32,12 +42,13 @@
 
             <Button
                 android:id="@+id/comment_button"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="55dp"
-                android:text="Đăng" />
+                android:background="@drawable/btn1"
+                android:text="Gửi đánh giá" />
 
             <Button
                 android:id="@+id/btnbutton"
@@ -46,6 +57,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginEnd="55dp"
+                android:background="@drawable/btn1"
                 android:text="Trở lại" />
 
         </RelativeLayout>
